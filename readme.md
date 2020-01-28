@@ -11,11 +11,11 @@ NOTE: the `user-data` file included in this repo contains default a Linux useran
 # Hypriot OS
 ## Basic manual setup:
 
-* get image from https://github.com/hypriot/image-builder-rpi/releases/
+* get the latest Hypriot OD SD card image from https://github.com/hypriot/image-builder-rpi/releases/
 * flash an SD card with CLI (e.g. `dd` command) or https://www.balena.io/etcher or https://github.com/hypriot/flash
 * Make sure newly flashed SD card is mounted 
 * Modify `user-data` file on the boot sector of the SD card by:
-  * un-commenting the Wifi setup lines (section starting `write_files:`and ending with `/etc/wpa_supplicant/wpa_supplicant.conf`)
+  * un-commenting the Wifi setup lines (section starting `write_files:`and ending with `path: /etc/wpa_supplicant/wpa_supplicant.conf`)
 
 ## Extended Setup to Bring Services (using `docker-compose`)
 
